@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  TZSubViewByMasonry
+//
+//  Created by iMac on 16/1/8.
+//  Copyright © 2016年 TZ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+
+
+#ifdef DEBUG
+#define DBLog(...) NSLog(__VA_ARGS__)
+#else
+#define DBLog(...)
+#endif
+
+#import "ReactiveCocoa.h"
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+
+
+
+#define DBLogFunc DBLog(@"%s", __func__);
+
+#define DBColorWhiteffffff UIColorFromRGB(0xffffff)
+#define DBColorGray999999 UIColorFromRGB(0x999999)
+#define DBColorLightGrayf7f7f7 UIColorFromRGB(0xf7f7f7)
+#define DBColorLightGraye5e5e5 UIColorFromRGB(0xe5e5e5)
+#define DBColorBlack191919 UIColorFromRGB(0x191919)
+#define DBColorOrangeff942c UIColorFromRGB(0xff942c)
+#define DBColorRede73f3f UIColorFromRGB(0xe73f3f)
+#define DBColorGreen24b015 UIColorFromRGB(0x24b015)
+#define DBColorBlue2cc1ff UIColorFromRGB(0x2cc1ff)
+
+
+
+#endif
+
+#endif /* PrefixHeader_pch */
